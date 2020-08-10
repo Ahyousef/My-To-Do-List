@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To Do List</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            My To do list
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="form blue-background height margin-top" >
+                <form id="form-id">
+                    <label for="Task">Task</label>
+                    <input required type="text" id="Task">
+                    <label for="Date">Date:</label>
+                    <input required type="date" id="Date">
+                    <label for="Urgency">Urgency</label>
+                    <select id="Urgency">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                      </select>
+                    <input type="submit" id="submit">
+                </form>
+            </div>
+            <div class="table blue-background margin-top">
+                <table id="table">
+                    <tr>
+                        <th>Task</th>
+                        <th>Date</th>
+                        <th>Urgency</th>
+                        <th>Done</th>
+                    </tr>
+                </table>
+
+                <button onclick="clearAll()" id="clear">
+                    Clear All Data
+                </button>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+            
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
